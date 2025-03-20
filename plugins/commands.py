@@ -42,13 +42,6 @@ async def invite(client, message):
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client:Client, message):
     await message.react(emoji=random.choice(REACTIONS))
-    pm_mode = False
-    try:
-         data = message.command[1]
-         if data.startswith('pm_mode_'):
-             pm_mode = True
-    except:
-        pass
     m = message
     user_id = m.from_user.id
     if len(m.command) == 2 and m.command[1].startswith('notcopy'):
@@ -244,7 +237,7 @@ async def start(client:Client, message):
         if message.command[1] != "subscribe":
             
             try:
-                chksub_data = message.command[1].replace('pm_mode_', '') if pm_mode else message.command[1]
+                chksub_data = message.command[1]
                 kk, grp_id, file_id = chksub_data.split('_', 2)
                 pre = 'checksubp' if kk == 'filep' else 'checksub'
                 btn.append(
@@ -290,11 +283,10 @@ async def start(client:Client, message):
             parse_mode=enums.ParseMode.HTML
         )
         
-    if data.startswith('pm_mode_'):
-        pm_mode = True
-        data = data.replace('pm_mode_', '')
+    data = message.command[1]
     try:
         pre, grp_id, file_id = data.split('_', 2)
+        print(f"Group Id - {grp_id}")
     except:
         pre, grp_id, file_id = "", 0, data
 
@@ -302,7 +294,7 @@ async def start(client:Client, message):
     if not await db.has_premium_access(user_id):
         grp_id = int(grp_id)
         user_verified = await db.is_user_verified(user_id)
-        settings = await get_settings(grp_id , pm_mode=pm_mode)
+        settings = await get_settings(grp_id)
         is_second_shortener = await db.use_second_shortener(user_id, settings.get('verify_time', TWO_VERIFY_GAP)) 
         is_third_shortener = await db.use_third_shortener(user_id, settings.get('third_verify_time', THREE_VERIFY_GAP))
         if settings.get("is_verify", IS_VERIFY) and not user_verified or is_second_shortener or is_third_shortener:
@@ -346,7 +338,7 @@ async def start(client:Client, message):
         for file in files:
             user_id = message.from_user.id 
             grp_id = temp.CHAT.get(user_id)
-            settings = await get_settings(grp_id, pm_mode=pm_mode)
+            settings = await get_settings(grp_id)
             CAPTION = settings['caption']
             f_caption = CAPTION.format(
                 file_name=formate_file_name(file.file_name),
@@ -386,7 +378,7 @@ async def start(client:Client, message):
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
         return await message.reply('<b>⚠️ ᴀʟʟ ꜰɪʟᴇs ɴᴏᴛ ꜰᴏᴜɴᴅ ⚠️</b>')
     files = files_[0]
-    settings = await get_settings(grp_id , pm_mode=pm_mode)
+    settings = await get_settings(grp_id)
     CAPTION = settings['caption']
     f_caption = CAPTION.format(
         file_name = formate_file_name(files.file_name),
