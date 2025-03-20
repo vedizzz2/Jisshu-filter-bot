@@ -32,9 +32,11 @@ class temp(object):
     CHAT = {}
     BANNED_USERS = []
     BANNED_CHATS = []
+ 
 def formate_file_name(file_name):
     file_name = ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file_name.split()))
     return file_name
+ 
 async def is_req_subscribed(bot, query):
     if await db.find_join_req(query.from_user.id):
         return True
@@ -167,18 +169,14 @@ async def groups_broadcast(chat_id, message, is_pin):
         await db.delete_chat(chat_id)
         return "Error"
 
-async def get_settings(group_id , pm_mode = False):
-    if pm_mode:
-        return SETTINGS.copy()
-    else:
-        settings = await db.get_settings(group_id)
-    return settings 
+async def get_settings(group_id):
+    settings = await db.get_settings(int(group_id))
+    return settings
     
 async def save_group_settings(group_id, key, value):
     current = await get_settings(group_id)
-    current.update({key: value})
-    temp.SETTINGS.update({group_id: current})
-    await db.update_settings(group_id, current)
+    current[key] = value
+    await db.update_settings(group_id, current) 
 
 def get_size(size):
     units = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB"]
