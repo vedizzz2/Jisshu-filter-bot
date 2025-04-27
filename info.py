@@ -31,13 +31,13 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Cluster0collection')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0'))  # set shortner log channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002656535628'))  # set shortner log channel
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002629195204')) # The movie you upload in it will be deleted from the bot.
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002295628555'))
 auth_channel = environ.get('AUTH_CHANNEL', '-1002250340602')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002343997444'))
-request_channel = environ.get('REQUEST_CHANNEL', '0') # If anyone sends a request message to your bot, you will get it in this channel.
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002656535628')) # 
+request_channel = environ.get('REQUEST_CHANNEL', '-1002159322288') # If anyone sends a request message to your bot, you will get it in this channel.
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002250340602')) # 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Netflix_Disnep') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -85,7 +85,7 @@ IS_SEND_MOVIE_UPDATE = is_enabled('IS_SEND_MOVIE_UPDATE', True) # Don't Change I
 PORT = environ.get('PORT', '5000')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
-DELETE_TIME = int(environ.get('DELETE_TIME', 1200))
+DELETE_TIME = int(environ.get('DELETE_TIME', 900))
 IMDB = is_enabled('IMDB', True)
 FILE_CAPTION = environ.get('FILE_CAPTION', f'{script.FILE_CAPTION}')
 IMDB_TEMPLATE = environ.get('IMDB_TEMPLATE', f'{script.IMDB_TEMPLATE_TXT}')
