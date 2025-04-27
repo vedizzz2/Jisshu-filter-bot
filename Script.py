@@ -39,7 +39,7 @@ class script(object):
 <blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/Vedisz'>Vedi</a> & <a href='https://t.me/ssmileyzz'>Bun</a></b></blockquote>"""
     
 
-    ABOUT_TEXT = """<blockquote><b>‣ ᴍʏ ɴᴀᴍᴇ : ℕ𝕒𝕣𝕦𝕥𝕠 𝔽𝕚𝕝𝕥𝕖𝕣\n‣ Friends ᴄʀᴇᴀᴛᴏr : <a href='https://t.me/Vedisz'>Vedi</a> & <a href='https://t.me/ssmileyzz'>Thileepan</a>\n‣ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ\n‣ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ\n‣ ᴅᴀᴛᴀ ʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\n‣ ʜᴏsᴛᴇᴅ ᴏɴ  : ᴀʟʟ ᴡᴇʙ\n‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ5.2 [sᴛᴀʙʟᴇ]</b></blockquote>"""    
+    ABOUT_TEXT = """<blockquote><b>‣ ᴍʏ ɴᴀᴍᴇ: <a href='https://t.me/NarutoV8_bot'>ℕ𝕒𝕣𝕦𝕥𝕠 𝔽𝕚𝕝𝕥𝕖𝕣</a>\n‣ Friends ᴄʀᴇᴀᴛᴏr: <a href='https://t.me/Vedisz'>Vedi</a> & <a href='https://t.me/ssmileyzz'>Thileepan</a>\n‣ Tq Support: <a href='tg://settings'</a>\n‣ More Channel: <a href='https://t.me/Tamil_LinksZzz'>Main</a>\n‣ Thanks To: <a href='https://t.me/JISSHU_BOTS'>Jisshu</a>\n‣ ʜᴏsᴛᴇᴅ ᴏɴ: ᴀʟʟ ᴡᴇʙ\n‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs: ᴠ5.2 [sᴛᴀʙʟᴇ]</b></blockquote>"""    
     
     SUPPORT_GRP_MOVIE_TEXT = '''<b>ʜᴇʏ {}
 
