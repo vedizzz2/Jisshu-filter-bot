@@ -39,7 +39,7 @@ class script(object):
 <blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/Vedisz'>Vedi</a> & <a href='https://t.me/ssmileyzz'>Bun</a></b></blockquote>"""
     
 
-    ABOUT_TEXT = """<blockquote><b>‣ ᴍʏ ɴᴀᴍᴇ: <a href='https://t.me/NarutoV8_bot'>ℕ𝕒𝕣𝕦𝕥𝕠 𝔽𝕚𝕝𝕥𝕖𝕣</a>\n‣ Friends ᴄʀᴇᴀᴛᴏr: <a href='https://t.me/Vedisz'>𝕍𝕖𝕕𝕚</a> & <a href='https://t.me/ssmileyzz'>𝕋𝕙𝕚𝕝𝕖𝕖𝕡𝕒𝕟</a>\n‣ I Like: <a href='tg://settings'>𝕋𝕙𝕚𝕤 ℙ𝕖𝕣𝕤𝕠𝕟</a>\n‣ More Channel: <a href='https://t.me/Tamil_LinksZzz'>𝕄𝕒𝕚𝕟 ℂ𝕙𝕒𝕟𝕟𝕖𝕝</a>\n‣ Thanks To: <a href='https://t.me/JISSHU_BOTS'>𝕁𝕚𝕤𝕤𝕙𝕦</a>\n‣ Join Now: <a href='https://www.instagram.com/_smiley__efx_?igsh=MWNjMGV3NWJzNnBxMw=='>𝕀𝕟𝕤𝕥𝕒𝕘𝕣𝕒𝕞</a>\n‣ Join Now: <a href='https://t.me/Shinchandoreamon1000'>ℂ𝕒𝕣𝕥𝕠𝕠𝕟 ℂ𝕙𝕒𝕟𝕟𝕖𝕝</a></blockquote></b>"""    
+    ABOUT_TEXT = """<blockquote><b>‣ ᴍʏ ɴᴀᴍᴇ: <a href='https://t.me/NarutoV8_bot'>ℕ𝕒𝕣𝕦𝕥𝕠 𝔽𝕚𝕝𝕥𝕖𝕣</a>\n‣ Friends Made: <a href='https://t.me/Vedisz'>𝕍𝕖𝕕𝕚</a> & <a href='https://t.me/ssmileyzz'>𝔹𝕦𝕟</a>\n‣ I Like: <a href='tg://settings'>𝕋𝕙𝕚𝕤 ℙ𝕖𝕣𝕤𝕠𝕟</a>\n‣ More Channel: <a href='https://t.me/Tamil_LinksZzz'>𝕄𝕒𝕚𝕟 ℂ𝕙𝕒𝕟𝕟𝕖𝕝</a>\n‣ Thanks To: <a href='https://t.me/JISSHU_BOTS'>𝕁𝕚𝕤𝕤𝕙𝕦</a>\n‣ Join Now: <a href='https://t.me/smileymovieshd5'>𝕄𝕠𝕧𝕚𝕖 𝔾𝕣𝕠𝕦𝕡</a>\n‣ Join Now: <a href='https://t.me/Shinchandoreamon1000'>ℂ𝕒𝕣𝕥𝕠𝕠𝕟 ℂ𝕙𝕒𝕟𝕟𝕖𝕝</a></blockquote></b>"""    
     
     SUPPORT_GRP_MOVIE_TEXT = '''<b>ʜᴇʏ {}
 
